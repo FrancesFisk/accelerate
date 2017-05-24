@@ -136,3 +136,28 @@ div.case-study-images img {
   width: 510px;
   height: 375px;
 }
+
+/* CONTACT PAGE */
+
+.nf-form-cont h3 {
+  display: none;
+}
+
+.page-narrow {
+  width: 620px;
+}
+
+.nf-field .nf-field-label label {
+    font-weight: normal;
+  }
+
+  .nf-field-element textarea {
+    border-color: #BFBFBF;
+  }
+
+#nf-field-4 {
+  width: 210px;
+  background-color: #45ac9d;
+  color: white;
+  float: right;
+}
