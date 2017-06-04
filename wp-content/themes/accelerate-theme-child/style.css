@@ -12,6 +12,8 @@
 
 @import url("../accelerate-theme/style.css");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 /* FRONT PAGE */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -149,6 +151,7 @@ div.case-study-images img {
 
 .nf-field .nf-field-label label {
     font-weight: normal;
+    font-size: .9em;
   }
 
   .nf-field-element textarea {
@@ -158,6 +161,177 @@ div.case-study-images img {
 #nf-field-4 {
   width: 210px;
   background-color: #45ac9d;
-  color: white;
+  color: #fff;
   float: right;
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+  height: 300px;
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.about-page-hero h4 {
+    color: white;
+    font-family: "open sans";
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 70px;
+    line-height: 35px;
+}
+
+.about-page-hero h4 span {
+  color: #45ac9d;
+}
+
+div.about-intro, div.service-group, section.services  {
+  width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-intro {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.about-intro h3 {
+  font-size: 16.5px;
+  text-transform: uppercase;
+}
+
+.about-intro p {
+  font-size: 16.5px;
+}
+
+.services {
+  margin-bottom: 50px;
+}
+
+.service-group {
+  height: 218px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+div.about-img {
+  height: 200px;
+  width: 200px;
+  border: solid 7px #45ac9d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+div.about-text {
+  width: 580px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.about-text h2 {
+  font-size: 25px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+}
+
+div.about-img p {
+  font-size: 16.5px;
+  -webkit-font-smoothing: antialiased;
+  color: #3b3b3b;
+  line-height: 27.5px;
+  letter-spacing: -.02em;
+  margin-top: 13px;
+}
+
+section.cta-contact {
+  width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 104px;
+  border-top: thin dotted #e3e1e1;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-group {
+  width: 652px;
+}
+
+.cta-contact h2 {
+  width: 375px;
+  height: 33px;
+  float: left;
+  font-size: 25px;
+  letter-spacing: -.01em;
+  line-height: 35px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin-top: 49.5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.cta-contact a {
+  float: right;
+  padding: 12px 65px 12px 65px;
+  margin-top: 49.5px;
+}
+
+/* FOOTER */
+
+span.fontawesome-text {
+  display: none;
+}
+
+nav.social-media-navigation li {
+  display: inline;
+}
+
+.menu-item i {
+  color: #ffffff;
+  background-color: #3b3b3b;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 4px;
+}
+
+/* 404 PAGE */
+
+section.page-404 {
+  background: url("img/head-in-wall.jpg") no-repeat center;
+  background-size: cover;
+}
+
+div.text-404 {
+  width: 510px;
+  padding: 60px;
+}
+
+div.text-404 p {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  color: black;
+  padding: 5px;
+}
+
+div.text-404 p a {
+  color: #45ac9d;
+  font-weight: bold;
 }
