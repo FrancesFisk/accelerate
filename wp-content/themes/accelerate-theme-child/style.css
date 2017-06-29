@@ -15,7 +15,21 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 .site-content {
-  width: 100%;
+  width: 96%;
+  padding: 2%;
+}
+
+.site {
+  overflow: hidden;
+}
+
+
+/* HEADER */
+
+.header-main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* FRONT PAGE */
@@ -35,7 +49,7 @@
 }
 
 .button {
-    background: none repeat scroll 0 0 #45ac9d;
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
 .featured-work h4 {
@@ -47,14 +61,17 @@
 .featured-work ul li {
   list-style: none;
   /*margin: 0 7px 0 7px; */
-    display: inline-block;
+  display: inline-block;
 }
 
 .homepage-featured-work {
   text-align: center;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .homepage-featured-work img {
@@ -69,11 +86,14 @@
 .homepage-posts {
   height: 465px;
   padding-bottom: 25px;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .blog-post {
   width: 45%;
-  margin-top: 80px;
+  margin-top: 40px;
   float: left;
   padding-right: 5%;
 }
@@ -114,7 +134,6 @@
 
 .twitter-widget {
   width: 45%;
-  margin-top: 80px;
   float: left;
   padding-left: 5%;
 }
@@ -445,112 +464,67 @@ div.text-404 p a {
 /****** MEDIA QUERIES *******/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .site-content {
+    background: orange;
+  }
 
-}
+  #menu-top-nav {
+    margin: 0;
+  }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
-}
+  .menu-top-nav-container ul li {
+      display: inline;
+      padding: 2px;
+      font-size: smaller;
+  }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
+  .home-page {
+    padding-top: 27px;
+  }
+
+  .button {
+    background: none repeat scroll 0 0 #45ac9d;
+  }
+
+  .homepage-featured-work {
+    display: inherit;
+  }
+
+  .homepage-featured-work img {
+    width: inherit;
+  }
+
+  .blog-post {
+    width: 90%;
+    padding: 5%;
+    margin-top: 0;
+    border-top: thin dotted #e3e1e1;
+  }
+
+  .twitter-widget {
+    width: 90%;
+    padding: 5% 5% 15% 5%;
+    margin-top: 0;
+    border-top: thin dotted #e3e1e1;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
+  .homepage-hero {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-/**********
-iPad 3
-**********/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
+  .homepage-featured-work img{
+    height: inherit;
+    width: 90%;
+    }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* iPhone 6 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* iPhone 6+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-}
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+  .blog-post {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
 }
