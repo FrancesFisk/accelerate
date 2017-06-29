@@ -464,10 +464,7 @@ div.text-404 p a {
 /****** MEDIA QUERIES *******/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .site-content {
-    background: orange;
-  }
-
+  
   #menu-top-nav {
     margin: 0;
   }
